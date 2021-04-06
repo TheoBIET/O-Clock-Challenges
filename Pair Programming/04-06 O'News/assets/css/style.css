@@ -1,0 +1,620 @@
+:root {
+    --white: #f1eeee;
+    --main: #1c1e25f3;
+    --low-opacity-main: #14161b6c;
+    --dark-main: #181a20;
+    --lighter-main: #252831;
+    --light-main: #8b8b8b;
+}
+
+body {
+    background: url("/assets/images/background.jpg");
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    position: absolute;
+    width: 70vw;
+    height: 80vh;
+    border-radius: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--main);
+    display: flex;
+    overflow: hidden;
+}
+
+/*---------------------------------------
+----  ASIDE LEFT MENU (SERVER LIST)  ----
+-----------------------------------------*/
+#server-list-container {
+    width: 6%;
+    background-color: var(--dark-main);
+}
+
+#server-list-container__action-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+#server-list-container__action-buttons div{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+.red-circle{background-color:red}
+.yellow-circle {background-color:yellow}
+.green-circle {background-color:green}
+.grey-circle {background-color:var(--dark-main)}
+.disconnected-circle{background-color:var(--dark-main); border: 1px solid white;}
+
+
+#server-list-container__action-buttons div:hover{
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+#server-list {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.--server-logo {
+    background-color: #000;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: var(--lighter-main);
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.8;
+    box-shadow: 0 0 2px black;
+    transition: .5s ease-in-out;
+}
+
+.--server-logo:hover {
+    filter: brightness(50%);
+    cursor: pointer;
+}
+
+.active {
+    box-shadow: 0 0 15px var(--light-main);
+    border: 2px solid var(--light-main);
+}
+
+.oclock {
+    background: url(/assets/images/oclock.png) center center;
+    background-size: 100%;
+}
+
+.promo {
+    background: url(/assets/images/oclock-promo.png) center center;
+    background-size: 100%;
+}
+
+.pro {
+    background: url(/assets/images/oclock-pro.png) 1px center;
+    background-size: 100%;
+}
+
+
+/*---------------------------------------
+-----------------------------------------
+-----------------------------------------*/
+
+/*---------------------------------------
+--------  NAVIGATION CENTER MENU  -------
+-----------------------------------------*/
+#navigation-container {
+    width: 25%;
+    background-color: var(--low-opacity-main);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 50px 0;
+    align-items: center;
+    text-align: center;
+}
+
+#navigation-container__header {
+    margin-bottom: 30px;
+}
+
+#navigation-container__header__profile-picture {
+    height: 9.8rem;
+    width: 9.8rem;
+    background: url(/assets/images/pp.jpg) 5px 0;
+    background-size: 100%;
+    box-shadow: 0 0 10px black;
+    border-radius: 50%;
+    margin-bottom: .99rem;
+}
+
+#navigation-container__header__username {
+    line-height: 1.5;
+}
+
+#navigation-container__header__username em {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#navigation-container__navigation-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 28rem;
+    text-align: left;
+}
+
+#navigation-container__navigation-menu ul li{
+    border-radius: 20px;
+    padding: 15px;
+    width: 175px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+#navigation-container__navigation-menu ul li:hover{
+    border-radius: 1.2rem;
+    background-color: var(--lighter-main);
+    transform: scale(1.1);
+    border: 1px solid var(--light-main);
+}
+
+.active-categorie {
+    transform: scale(1);
+    border: 1px solid var(--light-main);
+    filter: brightness(200%);
+}
+
+#navigation-container__navigation-menu ul li i{
+    font-size: 1.3em;
+    padding-right:.8rem;
+}
+/*---------------------------------------
+-----------------------------------------
+-----------------------------------------*/
+
+/*---------------------------------------
+---------  MAIN RIGHT CONTAINER  --------
+-----------------------------------------*/
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3%;
+}
+
+#main-container__appbox-container {
+    border-radius: 30px;
+    background-color: var(--lighter-main);
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+#main-container__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-container__header__search-container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--lighter-main);
+}
+
+#main-container__header i{
+    font-size: 2em;
+    padding: .8rem;
+}
+
+#main-container__header input{
+    font-size: 2em;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+#main-container__header__action-btn {
+    display: flex;
+    font-size: .5em;
+    cursor: pointer;
+}
+
+#main-container__header__action-btn div{
+    border: 1px solid var(--lighter-main);
+    max-height: 100%;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius:50%;
+}
+
+#main-container__header__action-btn div:hover {
+    background-color: rgba(255, 255, 255, 0.192);
+}
+
+#main-container__header__btn-profile {
+    height: 60px;
+    width: 60px;
+    background: url(/assets/images/pp.jpg) center 1px;
+    background-size: cover;
+}
+
+#main-container__appbox-container__channels {
+    width: 20em;
+    padding: 20px;
+}
+
+
+
+.main-container__appbox-container__channels__section__title {
+    display: flex;
+}
+
+#main-container__appbox-container__channels__btn-new-message {
+    border: 1px solid var(--light-grey);
+    padding: 20px 30px;
+    border: 1px solid var(--light-main);
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+#main-container__appbox-container__channels__btn-new-message:hover {
+    background-color: #8b8b8b34;
+}
+
+#main-container__appbox-container__messages {
+    background-color: var(--dark-main);
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-container__appbox-container__channels__section__title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+.main-container__appbox-container__channels__section__title i:hover {
+    cursor: pointer;
+}
+
+.main-container__appbox-container__channels__section__list {
+    max-height: 11.5em;
+    overflow: scroll;
+}
+
+/* -------------------------------------- */
+
+/* HIDE SCROLLBAR BUT KEEP FUNCTIONNALITY */
+.main-container__appbox-container__channels__section__list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .main-container__appbox-container__channels__section__list {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  /* -------------------------------------- */
+
+.main-container__appbox-container__channels__section__list ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--dark-main);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 30px;
+    transition: .5s ease-in-out;
+}
+
+.main-container__appbox-container__channels__section__list ul li:hover{
+    filter: brightness(200%);
+    cursor: pointer;
+}
+
+.main-container__appbox-container__channels__section__list .picture {
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    background: url(/assets/images/randompp.png);
+    background-size: 100%;
+}
+
+.main-container__appbox-container__channels__section__list .--dav {
+    background: url(/assets/images/pp.jpg);
+    background-size: 100%;
+}
+
+.main-container__appbox-container__channels__section__list .--slackbot {
+    background: url(/assets/images/slackbot.jpg);
+    background-size: 100%;
+}
+
+
+.main-container__appbox-container__channels__section__list .--oclock {
+    background: url(/assets/images/oclock.png);
+    background-size: 100%;
+}
+
+
+.main-container__appbox-container__channels__section__list .--pp1 {
+    background: url(/assets/images/pp1.png);
+    background-size: 100%;
+}
+
+
+.main-container__appbox-container__channels__section__list .--pp2 {
+    background: url(/assets/images/pp2.png);
+    background-size: 100%;
+}
+
+
+.main-container__appbox-container__channels__section__list .--pp3 {
+    background: url(/assets/images/pp3.jpg);
+    background-size: 100%;
+}
+
+
+
+.main-container__appbox-container__channels__section__list ul li .name {
+    margin-left: 10px;
+}
+
+.--unread {
+    font-weight: 900;
+}
+
+.--active-vocal {
+    font-weight: 900;
+    height: 50px;
+    padding: 5px;
+}
+
+.--active-vocal .call-list {
+    display: flex;
+    margin-top: 10px;
+}
+
+.--active-vocal .call-list div {
+    height: 15px;
+    width: 15px;
+    background: url(/assets/images/randompp.png);
+    background-size: 100%;
+    margin-right: 2px;
+    border-radius: 50%;
+}
+
+.--active-vocal .call-list div:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+.--active-vocal .call-list .last {
+    background: #000;
+    font-size: .8em;
+    height: 25px;
+    width: 25px;
+    transform: translate(0, -5px);
+    text-align: center;
+    line-height: 1.8;
+}
+
+.align-left {
+    display: flex;
+}
+
+.main-container__appbox-container__channels__section__list .status {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.7;
+}
+
+#main-container__appbox-container__messages__header {
+    background-color: var(--lighter-main);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+#main-container__appbox-container__messages__header__left-section__channel-name {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#main-container__appbox-container__messages__header__right-section {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+#main-container__appbox-container__messages__header__right-section__peoples {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#main-container__appbox-container__messages__header__right-section__action-btn {
+    display: flex;
+    align-items: center;
+}
+
+.main-container__appbox-container__messages__header__right-section__action-btn__icons {
+    margin: 0 12px;
+    transition: .5s ease-in-out;
+}
+
+.main-container__appbox-container__messages__header__right-section__action-btn__icons:hover {
+    color: var(--main);
+    cursor: pointer;
+}
+
+.randompp{
+    background: url(/assets/images/randompp.png);
+    background-size: 100%;
+    height: 25px;
+    width: 25px;
+    margin: 2px;
+}
+
+.--pp1 {
+    background: url(/assets/images/pp1.png);
+    background-size: 100%;
+    height: 25px;
+    width: 25px;
+    margin: 2px;
+}
+
+
+.--pp2 {
+    background: url(/assets/images/pp2.png);
+    background-size: 100%;
+    height: 25px;
+    width: 25px;
+    margin: 2px;
+}
+
+
+.--pp3 {
+    background: url(/assets/images/pp3.jpg);
+    background-size: 100%;
+    height: 25px;
+    width: 25px;
+    margin: 2px;
+}
+
+
+.all {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#main-container__appbox-container__messages__header__right-section__action-btn i{
+    font-size: 1.2em;
+}
+
+#main-container__appbox-container__messages__input {
+    background-color: var(--lighter-main);
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+#main-container__appbox-container__messages__input i {
+    font-size: 1.2em;
+    border: 1px solid white;
+    padding: 12px;
+    padding-right: 15px;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+}
+
+#main-container__appbox-container__messages__input i:hover {
+    background-color: var(--light-main);
+    cursor: pointer;
+}
+
+#main-container__appbox-container__messages__input input {
+    border: 1px solid var(--light-main);
+    border-radius: 20px;
+    background-color: transparent;
+    height: 50px;
+    width: 80%;
+    padding: 10px;
+    color: white;
+}
+
+#main-container__appbox-container__messages__messages-container {
+    height: 100%;
+    padding: 25px;
+    overflow: scroll;
+}
+
+/* HIDE SCROLLBAR BUT KEEP FUNCTIONNALITY */
+#main-container__appbox-container__messages__messages-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #main-container__appbox-container__messages__messages-container {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  /* -------------------------------------- */
+
+.main-container__appbox-container__messages__messages-container__message {
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.main-container__appbox-container__messages__messages-container__message__content--another {
+    display: flex;
+    align-items: center;
+}
+
+
+.main-container__appbox-container__messages__messages-container__message__content--me{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.main-container__appbox-container__messages__messages-container__message__content--another .profile-pic, .main-container__appbox-container__messages__messages-container__message__content--me .profile-pic {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.main-container__appbox-container__messages__messages-container__message__content--another .message-content {
+    background-color: var(--light-main);
+    border-radius: 30px;
+    padding: 15px;
+    margin: 0 5px;
+    color: #000;
+}
+
+.main-container__appbox-container__messages__messages-container__message__content--me .message-content {
+    background-color: var(--main);
+    border-radius: 30px;
+    padding: 15px;
+    margin: 0 5px;
+}
+
+/*---------------------------------------
+-----------------------------------------
+-----------------------------------------*/

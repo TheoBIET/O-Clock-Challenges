@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>O'Slack</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="server-list-container">
+        <div id="server-list-container__action-buttons">
+          <div class="red-circle"></div>
+          <div class="yellow-circle"></div>
+          <div class="green-circle"></div>
+        </div>
+        <div id="server-list">
+          <div class="oclock --server-logo"></div>
+          <div class="promo --server-logo active"></div>
+          <div class="pro --server-logo"></div>
+          <div class="add-server --server-logo">+</div>
+        </div>
+      </div>
+      <div id="navigation-container">
+        <div id="navigation-container__header">
+          <div id="navigation-container__header__profile-picture"></div>
+          <div id="navigation-container__header__username">
+            <p>Welcome Back,</p>
+            <em>Théo BIET</em>
+          </div>
+        </div>
+        <div id="navigation-container__navigation-menu">
+          <ul>
+            <div class="middle-section">
+              <li><i class="far fa-clone"></i> Dashboard</li>
+              <li class="active-categorie">
+                <i class="fab fa-slack"></i>
+                Slack
+              </li>
+              <li><i class="fas fa-list-ul"></i> Kourou</li>
+              <li><i class="fas fa-rocket"></i> Cockpit</li>
+              <li><i class="far fa-clock"></i> Activity</li>
+            </div>
+            <div class="settings-btn">
+              <li><i class="fas fa-cog"></i> Settings</li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div id="main-container">
+        <div id="main-container__header">
+          <div id="main-container__header__search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search in O'Clock Tardis" />
+          </div>
+          <div id="main-container__header__action-btn">
+            <div class="main-container__header__action-btn-notification">
+              <i class="far fa-bell-slash"></i>
+            </div>
+            <div id="main-container__header__btn-profile"></div>
+          </div>
+        </div>
+
+        <div id="main-container__appbox-container">
+          <!-- LEFT -->
+          <div id="main-container__appbox-container__channels">
+            <div
+              id="main-container__appbox-container__channels__btn-new-message"
+            >
+              <p>
+                <i class="fas fa-plus"></i> &nbsp;&nbsp;&nbsp;&nbsp; New Message
+              </p>
+            </div>
+            <div class="main-container__appbox-container__channels__section">
+              <div
+                class="main-container__appbox-container__channels__section__title"
+              >
+                <p>Channels</p>
+                <p><i class="fas fa-plus"></i></p>
+              </div>
+              <div
+                class="main-container__appbox-container__channels__section__list"
+              >
+                <ul>
+                  <li>
+                    <div class="align-left">
+                      <div><i class="fas fa-hashtag"></i></div>
+                      <div class="name --unread">Annonces</div>
+                    </div>
+                    <div class="status red-circle">1</div>
+                  </li>
+                  <li class="active-categorie">
+                    <div class="align-left">
+                      <div><i class="fas fa-hashtag"></i></div>
+                      <div class="name --unread">Général</div>
+                    </div>
+                    <div class="status red-circle"><div class="">12</div></div>
+                  </li>
+                  <li>
+                    <div class="align-left">
+                      <div><i class="fas fa-hashtag"></i></div>
+                      <div class="name">Entraide</div>
+                    </div>
+                    <div class="status"></div>
+                  </li>
+                  <li>
+                    <div class="align-left">
+                      <div><i class="fas fa-hashtag"></i></div>
+                      <div class="name --unread">Code Feedback</div>
+                    </div>
+                    <div class="status red-circle">3</div>
+                  </li>
+                  <li>
+                    <div class="align-left">
+                      <div><i class="fas fa-hashtag"></i></div>
+                      <div class="name">Kiemtao</div>
+                    </div>
+                    <div class="status"></div>
+                  </li>
+                  <li>
+                    <div class="align-left">
+                      <div><i class="fas fa-hashtag"></i></div>
+                      <div class="name">Random</div>
+                    </div>
+                    <div class="status"></div>
+                  </li>
+                  <li>
+                    <div class="align-left">
+                      <div><i class="fas fa-hashtag"></i></div>
+                      <div class="name">Projets</div>
+                    </div>
+                    <div class="status"></div>
+                  </li>
+                  <li>
+                    <div class="align-left">
+                      <div><i class="fas fa-hashtag"></i></div>
+                      <div class="name">SAV</div>
+                    </div>
+                    <div class="status"></div>
+                  </li>
+                  <li>
+                    <div class="align-left --active-vocal">
+                      <div>
+                        <i class="fas fa-microphone-alt"></i>
+                      </div>
+                      <div class="name">
+                        Vocal Général
+                        <div class="call-list">
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                          <div class="last">+4</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="status green-circle">12</div>
+                  </li>
+                  <li>
+                    <div class="align-left">
+                      <div>
+                        <i class="fas fa-microphone-alt"></i>
+                      </div>
+                      <div class="name --unread">Vocal Privé</div>
+                    </div>
+                    <div class="status grey-circle">5</div>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="main-container__appbox-container__channels__section__title"
+              >
+                <p>Direct Messages</p>
+                <p><i class="fas fa-plus"></i></p>
+              </div>
+              <div
+                class="main-container__appbox-container__channels__section__list"
+              >
+                <ul>
+                  <li>
+                    <div class="align-left">
+                      <div class="picture --oclock"></div>
+                      <div class="name --unread">Docteur Charles</div>
+                    </div>
+                    <div class="status red-circle">18</div>
+                  </li>
+                  <li>
+                    <div class="align-left">
+                      <div class="picture --slackbot"></div>
+                      <div class="name --unread">Slackbot</div>
+                    </div>
+                    <div class="status red-circle">1</div>
+                  </li>
+                  <li>
+                    <div class="align-left">
+                      <div class="picture --dav"></div>
+                      <div class="name">Théo (you)</div>
+                    </div>
+                    <div class="status yellow-circle"></div>
+                  </li>
+                  <li>
+                    <div class="align-left">
+                      <div class="picture --pp1"></div>
+                      <div class="name">Chris</div>
+                    </div>
+                    <div class="status disconnected-circle"></div>
+                  </li>
+                  <li>
+                    <div class="align-left">
+                      <div class="picture --pp2"></div>
+                      <div class="name">Corentin Couzigo</div>
+                    </div>
+                    <div class="status green-circle"></div>
+                  </li>
+                  <li>
+                    <div class="align-left">
+                      <div class="picture --pp3"></div>
+                      <div class="name">Cyril Promo Tardis</div>
+                    </div>
+                    <div class="status disconnected-circle"></div>
+                  </li>
+                  <li>
+                    <div class="align-left">
+                      <div class="picture --oclock"></div>
+                      <div class="name">Juliane O'Clock</div>
+                    </div>
+                    <div class="status yellow-circle"></div>
+                  </li>
+                  <li>
+                    <div class="align-left">
+                      <div class="picture --pp1"></div>
+                      <div class="name">Léa Baty</div>
+                    </div>
+                    <div class="status disconnected-circle"></div>
+                  </li>
+                  <li>
+                    <div class="align-left">
+                      <div class="picture --pp2"></div>
+                      <div class="name">Yann H.</div>
+                    </div>
+                    <div class="status disconnected-circle"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- MESSAGE -->
+          <div id="main-container__appbox-container__messages">
+            <div id="main-container__appbox-container__messages__header">
+              <div
+                id="main-container__appbox-container__messages__header__left-section"
+              >
+                <div
+                  id="main-container__appbox-container__messages__header__left-section__channel-name"
+                >
+                  <i class="fas fa-hashtag"></i>
+                  <h1>Général</h1>
+                  <i class="far fa-star"></i>
+                </div>
+                <div
+                  id="main-container__appbox-container__messages__header__left-section__channel-description"
+                >
+                  <i class="fas fa-thumbtack"></i> 5 | Add a Topic
+                </div>
+              </div>
+              <div
+              id="main-container__appbox-container__messages__header__right-section"
+            >
+              <div
+                id="main-container__appbox-container__messages__header__right-section__peoples"
+              >
+                <div class="randompp"></div>
+                <div class="--pp3"></div>
+                <div class="--pp2"></div>
+                <div class="--pp1"></div>
+                <div class="all">+ 74</div>
+              </div>
+
+              <div
+                id="main-container__appbox-container__messages__header__right-section__action-btn"
+              ><div class="main-container__appbox-container__messages__header__right-section__action-btn__icons"><i class="fas fa-user-friends"></i></div>
+              <div class="main-container__appbox-container__messages__header__right-section__action-btn__icons"><i class="fas fa-info"></i></div>
+
+
+            </div>
+            </div>
+            </div>
+
+
+
+            <div
+              id="main-container__appbox-container__messages__messages-container"
+            >
+              <div class="main-container__appbox-container__messages__messages-container__message">
+                <div class="main-container__appbox-container__messages__messages-container__message__content--another">
+                  <div class="profile-pic --pp1"></div>
+                  <div class="message-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, id?</div>
+                </div>
+              </div>
+              <div class="main-container__appbox-container__messages__messages-container__message">
+                <div class="main-container__appbox-container__messages__messages-container__message__content--me">
+                  <div class="profile-pic --pp2"></div>
+                  <div class="message-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, id?</div>
+                </div>
+              </div>
+              <div class="main-container__appbox-container__messages__messages-container__message">
+                <div class="main-container__appbox-container__messages__messages-container__message__content--another">
+                  <div class="profile-pic --pp1"></div>
+                  <div class="message-content">Lorem ipsum dolor sit.</div>
+                </div>
+              </div>
+              <div class="main-container__appbox-container__messages__messages-container__message">
+                <div class="main-container__appbox-container__messages__messages-container__message__content--me">
+                  <div class="profile-pic --pp2"></div>
+                  <div class="message-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi fugit unde alias, doloribus optio voluptatibus tempora nesciunt modi fuga asperiores labore illum! Delectus accusamus aspernatur, at, enim temporibus suscipit in sed vitae, corrupti dolore rem magnam aliquid ad vel vero atque ipsa. Quis neque explicabo at, modi nihil eius est excepturi suscipit incidunt unde vero, quibusdam expedita illum optio aliquam dolor a laudantium consequuntur facere. Ad expedita exercitationem, doloribus, dolorem reprehenderit optio deserunt unde commodi quo eius obcaecati inventore ea dolorum tempora possimus aspernatur minus, ratione harum maiores accusantium. Accusantium voluptate atque in, dolorem nesciunt, quo delectus necessitatibus a minima sequi aut doloribus vel voluptatem expedita earum labore alias assumenda provident amet! At sint sit ab quo aut omnis laboriosam dicta, vel animi ut eum necessitatibus consectetur asperiores earum aliquam beatae distinctio blanditiis voluptas accusamus dignissimos quas nisi temporibus?</div>
+                </div>
+              </div>
+              <div class="main-container__appbox-container__messages__messages-container__message">
+                <div class="main-container__appbox-container__messages__messages-container__message__content--another">
+                  <div class="profile-pic --pp1"></div>
+                  <div class="message-content">Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+                </div>
+              </div>
+              <div class="main-container__appbox-container__messages__messages-container__message">
+                <div class="main-container__appbox-container__messages__messages-container__message__content--another">
+                  <div class="profile-pic --pp1"></div>
+                  <div class="message-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit maxime et magnam iusto nihil molestias! Neque.</div>
+                </div>
+              </div>
+              <div class="main-container__appbox-container__messages__messages-container__message">
+                <div class="main-container__appbox-container__messages__messages-container__message__content--another">
+                  <div class="profile-pic --pp1"></div>
+                  <div class="message-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, asperiores? Iste expedita aspernatur vel! Voluptates amet tempora ipsam, reiciendis mollitia magni enim quidem, exercitationem deserunt corporis eligendi, dolor nemo explicabo?</div>
+                </div>
+              </div>
+              <div class="main-container__appbox-container__messages__messages-container__message">
+                <div class="main-container__appbox-container__messages__messages-container__message__content--me">
+                  <div class="profile-pic --pp1"></div>
+                  <div class="message-content">Made with ❤️ by Théo BIET for train his flexbox</div>
+                </div>
+              </div>
+          </div>
+
+
+          <div id="main-container__appbox-container__messages__input">
+            <input type="text" placeholder="Type a message to send in # Général">
+            <i class="fas fa-paper-plane"></i>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
