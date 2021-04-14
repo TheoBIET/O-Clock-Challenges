@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>o'Quizz</title>
+   </head>
+   <body>
+      <h1>o'Quizz</h1>
+      <h2>Répondez correctement aux questions pour marquer un maximum de points</h2>
+      <div id="quizz-container">
+         <h3 id="question-number"></h3>
+         <p id="question"></p>
+         <div class="qcm choice-1" onclick="VerifyAnswer(choices[0].textContent)" ></div>
+         <div class="qcm choice-2" onclick="VerifyAnswer(choices[1].textContent)"></div>
+         <div class="qcm choice-3" onclick="VerifyAnswer(choices[2].textContent)"></div>
+         <div class="result" id="true"></div>
+         <div class="result" id="false"></div>
+         <div id="btn-next" onclick="UpdateQuestions()">Prochaine Question</div>
+         <div id="score"></div>
+      </div>
+      <script src="main.js"></script>
+   </body>
+</html>
