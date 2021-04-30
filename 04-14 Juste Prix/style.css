@@ -1,0 +1,28 @@
+:root {
+   --main: #fff;
+   --success: #fff;
+   --red: #fff;
+   --orange: #fff;
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+   text-align: center;
+}
+
+#container {
+   margin: auto;
+   width: 50%;
+   height: 50vh;
+   overflow-Y: scroll;
+   border: 1px solid black;
+   padding: 3%;
+   text-align: center;
+}
+
+#container input {
+   padding: 10px 50px;
+}
